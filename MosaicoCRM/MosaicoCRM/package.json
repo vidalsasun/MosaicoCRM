@@ -1,0 +1,9 @@
+{
+  "name": "mosaico-crm",
+  "version": "0.0.0",
+  "description": "MosaicoCRM",
+  "main": "server.js",
+  "author": {
+    "name": "cmoreira"
+  }
+}

@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{8287eddc-7ade-4429-9c53-3a39fe0200e0}</ProjectGuid>
+        <ProjectHome>..\..\..\Documents\Visual Studio 2015\Projects\mosaico\</ProjectHome>
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile>Gruntfile.js</StartupFile>
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="NOTICE.txt" />
+        <Content Include="editor.html" />
+        <Content Include="index.html" />
+        <Content Include="favicon.ico" />
+        <Content Include="bower.json" />
+        <Content Include="package.json" />
+        <Content Include="README.md" />
+        <Compile Include="Gruntfile.js" />
+        <Compile Include="server-config.js" />
+        <Content Include="backend\README.txt" />
+        <Compile Include="backend\main.js" />
+        <Content Include="build\mosaico-material.css" />
+        <Content Include="build\mosaico.css" />
+        <Compile Include="build\mosaico.debug.js" />
+        <Compile Include="build\mosaico.js" />
+        <Compile Include="build\templates.js" />
+        <Content Include="dist\mosaico.material.min.css" />
+        <Content Include="dist\mosaico.min.css" />
+        <Compile Include="dist\mosaico.min.js" />
+        <Compile Include="spec\converter-spec.js" />
+        <Compile Include="spec\declarations-spec.js" />
+        <Compile Include="spec\mensch-spec.js" />
+        <Compile Include="spec\model-spec.js" />
+        <Compile Include="spec\stylesheet-spec.js" />
+        <Compile Include="tasks\combineKOTemplates.js" />
+        <Compile Include="tasks\makeThumbs.js" />
+        <Content Include="uploads\LOGO-QUONEXT.png" />
+        <Content Include="uploads\birthdate_cake.jpg" />
+        <Content Include="uploads\thank-you-1.jpg" />
+        <Content Include="uploads\README.md" />
+        <Content Include="dist\img\byvoxmail.png" />
+        <Content Include="dist\img\mosaico32.png" />
+        <Content Include="dist\img\mosaicologo.png" />
+        <Content Include="dist\img\screenshot.orig.png" />
+        <Content Include="dist\img\screenshot.png" />
+        <Content Include="dist\img\mosaico.badge.gif" />
+        <Content Include="dist\img\mosaico.v.gif" />
+        <Content Include="dist\lang\mosaico.de.json" />
+        <Content Include="dist\lang\mosaico.en.json" />
+        <Content Include="dist\lang\mosaico.es.json" />
+        <Content Include="dist\lang\mosaico.fr.json" />
+        <Content Include="dist\lang\mosaico.it.json" />
+        <Content Include="dist\lang\mosaico.nl.json" />
+        <Content Include="dist\lang\mosaico.sv.json" />
+        <Content Include="dist\lang\README.md" />
+        <Content Include="dist\vendor\jquery.ui.min.css" />
+        <Compile Include="dist\vendor\canvas.to.blob.min.js" />
+        <Compile Include="dist\vendor\jquery.fileupload.image.js" />
+        <Compile Include="dist\vendor\jquery.fileupload.js" />
+        <Compile Include="dist\vendor\jquery.fileupload.process.js" />
+        <Compile Include="dist\vendor\jquery.fileupload.validate.js" />
+        <Compile Include="dist\vendor\jquery.iframe.transport.js" />
+        <Compile Include="dist\vendor\jquery.min.js" />
+        <Compile Include="dist\vendor\jquery.ui.min.js" />
+        <Compile Include="dist\vendor\jquery.ui.touch.punch.min.js" />
+        <Compile Include="dist\vendor\knockout.jqueryui.min.js" />
+        <Compile Include="dist\vendor\knockout.js" />
+        <Compile Include="dist\vendor\load.image.all.min.js" />
+        <Compile Include="dist\vendor\tinymce.min.js" />
+        <Content Include="dist\fa\fonts\fontawesome.webfont.svg" />
+        <Content Include="dist\vendor\notoregular\stylesheet.css" />
+        <Compile Include="dist\vendor\plugins\advlist\plugin.js" />
+        <Compile Include="dist\vendor\plugins\advlist\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\anchor\plugin.js" />
+        <Compile Include="dist\vendor\plugins\anchor\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\autolink\plugin.js" />
+        <Compile Include="dist\vendor\plugins\autolink\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\autoresize\plugin.js" />
+        <Compile Include="dist\vendor\plugins\autoresize\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\autosave\plugin.js" />
+        <Compile Include="dist\vendor\plugins\autosave\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\bbcode\plugin.js" />
+        <Compile Include="dist\vendor\plugins\bbcode\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\charmap\plugin.js" />
+        <Compile Include="dist\vendor\plugins\charmap\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\code\plugin.js" />
+        <Compile Include="dist\vendor\plugins\code\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\codesample\plugin.js" />
+        <Compile Include="dist\vendor\plugins\codesample\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\colorpicker\plugin.js" />
+        <Compile Include="dist\vendor\plugins\colorpicker\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\contextmenu\plugin.js" />
+        <Compile Include="dist\vendor\plugins\contextmenu\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\directionality\plugin.js" />
+        <Compile Include="dist\vendor\plugins\directionality\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\emoticons\plugin.js" />
+        <Compile Include="dist\vendor\plugins\emoticons\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\fullpage\plugin.js" />
+        <Compile Include="dist\vendor\plugins\fullpage\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\fullscreen\plugin.js" />
+        <Compile Include="dist\vendor\plugins\fullscreen\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\hr\plugin.js" />
+        <Compile Include="dist\vendor\plugins\hr\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\image\plugin.js" />
+        <Compile Include="dist\vendor\plugins\image\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\imagetools\plugin.js" />
+        <Compile Include="dist\vendor\plugins\imagetools\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\importcss\plugin.js" />
+        <Compile Include="dist\vendor\plugins\importcss\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\insertdatetime\plugin.js" />
+        <Compile Include="dist\vendor\plugins\insertdatetime\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\layer\plugin.js" />
+        <Compile Include="dist\vendor\plugins\layer\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\legacyoutput\plugin.js" />
+        <Compile Include="dist\vendor\plugins\legacyoutput\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\link\plugin.js" />
+        <Compile Include="dist\vendor\plugins\link\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\lists\plugin.js" />
+        <Compile Include="dist\vendor\plugins\lists\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\media\plugin.js" />
+        <Compile Include="dist\vendor\plugins\media\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\nonbreaking\plugin.js" />
+        <Compile Include="dist\vendor\plugins\nonbreaking\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\noneditable\plugin.js" />
+        <Compile Include="dist\vendor\plugins\noneditable\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\pagebreak\plugin.js" />
+        <Compile Include="dist\vendor\plugins\pagebreak\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\paste\plugin.js" />
+        <Compile Include="dist\vendor\plugins\paste\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\preview\plugin.js" />
+        <Compile Include="dist\vendor\plugins\preview\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\print\plugin.js" />
+        <Compile Include="dist\vendor\plugins\print\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\save\plugin.js" />
+        <Compile Include="dist\vendor\plugins\save\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\searchreplace\plugin.js" />
+        <Compile Include="dist\vendor\plugins\searchreplace\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\spellchecker\plugin.js" />
+        <Compile Include="dist\vendor\plugins\spellchecker\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\tabfocus\plugin.js" />
+        <Compile Include="dist\vendor\plugins\tabfocus\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\table\plugin.js" />
+        <Compile Include="dist\vendor\plugins\table\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\template\plugin.js" />
+        <Compile Include="dist\vendor\plugins\template\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\textcolor\plugin.js" />
+        <Compile Include="dist\vendor\plugins\textcolor\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\textpattern\plugin.js" />
+        <Compile Include="dist\vendor\plugins\textpattern\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\visualblocks\plugin.js" />
+        <Compile Include="dist\vendor\plugins\visualblocks\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\visualchars\plugin.js" />
+        <Compile Include="dist\vendor\plugins\visualchars\plugin.min.js" />
+        <Compile Include="dist\vendor\plugins\wordcount\plugin.js" />
+        <Compile Include="dist\vendor\plugins\wordcount\plugin.min.js" />
+        <Content Include="dist\vendor\plugins\codesample\css\prism.css" />
+        <Content Include="dist\vendor\plugins\emoticons\img\smiley.cool.gif" />
+        <Content Include="dist\vendor\plugins\emoticons\img\smiley.cry.gif" />
+        <Content Include="dist\vendor\plugins\emoticons\img\smiley.embarassed.gif" />
+        <Content Include="dist\vendor\plugins\emoticons\img\smiley.foot.in.mouth.gif" />
+        <Content Include="dist\vendor\plugins\emoticons\img\smiley.frown.gif" />
+        <Content Include="dist\vendor\plugins\emoticons\img\smiley.innocent.gif" />
+        <Content Include="dist\vendor\plugins\emoticons\img\smiley.kiss.gif" />
+        <Content Include="dist\vendor\plugins\emoticons\img\smiley.laughing.gif" />
+        <Content Include="dist\vendor\plugins\emoticons\img\smiley.money.mouth.gif" />
+        <Content Include="dist\vendor\plugins\emoticons\img\smiley.sealed.gif" />
+        <Content Include="dist\vendor\plugins\emoticons\img\smiley.smile.gif" />
+        <Content Include="dist\vendor\plugins\emoticons\img\smiley.surprised.gif" />
+        <Content Include="dist\vendor\plugins\emoticons\img\smiley.tongue.out.gif" />
+        <Content Include="dist\vendor\plugins\emoticons\img\smiley.undecided.gif" />
+        <Content Include="dist\vendor\plugins\emoticons\img\smiley.wink.gif" />
+        <Content Include="dist\vendor\plugins\emoticons\img\smiley.yell.gif" />
+        <Content Include="dist\vendor\plugins\visualblocks\css\visualblocks.css" />
+        <Content Include="dist\vendor\skins\grayflat\content.inline.min.css" />
+        <Content Include="dist\vendor\skins\grayflat\content.min.css" />
+        <Content Include="dist\vendor\skins\grayflat\skin.ie7.min.css" />
+        <Content Include="dist\vendor\skins\grayflat\skin.min.css" />
+        <Content Include="dist\vendor\skins\grayflat\skin.json" />
+        <Content Include="dist\vendor\skins\lightgray\content.inline.min.css" />
+        <Content Include="dist\vendor\skins\lightgray\content.min.css" />
+        <Content Include="dist\vendor\skins\lightgray\skin.ie7.min.css" />
+        <Content Include="dist\vendor\skins\lightgray\skin.min.css" />
+        <Content Include="dist\vendor\skins\grayflat\fonts\tinymce.small.svg" />
+        <Content Include="dist\vendor\skins\grayflat\fonts\tinymce.svg" />
+        <Content Include="dist\vendor\skins\grayflat\fonts\tinymce.json" />
+        <Content Include="dist\vendor\skins\grayflat\fonts\tinymce.small.json" />
+        <Content Include="dist\vendor\skins\grayflat\fonts\readme.md" />
+        <Content Include="dist\vendor\skins\grayflat\img\anchor.gif" />
+        <Content Include="dist\vendor\skins\grayflat\img\loader.gif" />
+        <Content Include="dist\vendor\skins\grayflat\img\object.gif" />
+        <Content Include="dist\vendor\skins\grayflat\img\trans.gif" />
+        <Content Include="dist\vendor\skins\lightgray\fonts\tinymce.small.svg" />
+        <Content Include="dist\vendor\skins\lightgray\fonts\tinymce.svg" />
+        <Content Include="dist\vendor\skins\lightgray\img\anchor.gif" />
+        <Content Include="dist\vendor\skins\lightgray\img\loader.gif" />
+        <Content Include="dist\vendor\skins\lightgray\img\object.gif" />
+        <Content Include="dist\vendor\skins\lightgray\img\trans.gif" />
+        <Compile Include="dist\vendor\themes\inlite\theme.js" />
+        <Compile Include="dist\vendor\themes\inlite\theme.min.js" />
+        <Compile Include="dist\vendor\themes\modern\theme.js" />
+        <Compile Include="dist\vendor\themes\modern\theme.min.js" />
+        <Content Include="res\img\byvoxmail.png" />
+        <Content Include="res\img\mosaico32.png" />
+        <Content Include="res\img\mosaicologo.png" />
+        <Content Include="res\img\screenshot-orig.png" />
+        <Content Include="res\img\screenshot.png" />
+        <Content Include="res\img\mosaico-badge.gif" />
+        <Content Include="res\img\mosaico-v.gif" />
+        <Content Include="res\lang\mosaico-de.json" />
+        <Content Include="res\lang\mosaico-en.json" />
+        <Content Include="res\lang\mosaico-es.json" />
+        <Content Include="res\lang\mosaico-fr.json" />
+        <Content Include="res\lang\mosaico-it.json" />
+        <Content Include="res\lang\mosaico-nl.json" />
+        <Content Include="res\lang\mosaico-sv.json" />
+        <Content Include="res\lang\README.md" />
+        <Content Include="res\vendor\skins\gray-flat\content.inline.min.css" />
+        <Content Include="res\vendor\skins\gray-flat\content.min.css" />
+        <Content Include="res\vendor\skins\gray-flat\skin.ie7.min.css" />
+        <Content Include="res\vendor\skins\gray-flat\skin.min.css" />
+        <Content Include="res\vendor\skins\gray-flat\skin.json" />
+        <Content Include="res\vendor\skins\gray-flat\fonts\tinymce-small.svg" />
+        <Content Include="res\vendor\skins\gray-flat\fonts\tinymce.svg" />
+        <Content Include="res\vendor\skins\gray-flat\fonts\tinymce-small.json" />
+        <Content Include="res\vendor\skins\gray-flat\fonts\tinymce.json" />
+        <Content Include="res\vendor\skins\gray-flat\fonts\readme.md" />
+        <Content Include="res\vendor\skins\gray-flat\img\anchor.gif" />
+        <Content Include="res\vendor\skins\gray-flat\img\loader.gif" />
+        <Content Include="res\vendor\skins\gray-flat\img\object.gif" />
+        <Content Include="res\vendor\skins\gray-flat\img\trans.gif" />
+        <Content Include="spec\data\template-versafix-1.model.json" />
+        <Content Include="src\css\safarihack.css" />
+        <Compile Include="src\js\app.js" />
+        <Compile Include="src\js\ko.bindings.js" />
+        <Compile Include="src\js\template.loader.js" />
+        <Compile Include="src\js\timed.call.js" />
+        <Compile Include="src\js\viewmodel.js" />
+        <Content Include="src\tmpl\array.tmpl.html" />
+        <Content Include="src\tmpl\block-show.tmpl.html" />
+        <Content Include="src\tmpl\block-wysiwyg.tmpl.html" />
+        <Content Include="src\tmpl\blocks-show.tmpl.html" />
+        <Content Include="src\tmpl\blocks-wysiwyg.tmpl.html" />
+        <Content Include="src\tmpl\customstyle.tmpl.html" />
+        <Content Include="src\tmpl\empty.tmpl.html" />
+        <Content Include="src\tmpl\error.tmpl.html" />
+        <Content Include="src\tmpl\gallery-images.tmpl.html" />
+        <Content Include="src\tmpl\img-wysiwyg.tmpl.html" />
+        <Content Include="src\tmpl\main.tmpl.html" />
+        <Content Include="src\tmpl\toolbox.tmpl.html" />
+        <Compile Include="src\js\bindings\bind.iframe.js" />
+        <Compile Include="src\js\bindings\blocks.js" />
+        <Compile Include="src\js\bindings\choose.template.js" />
+        <Compile Include="src\js\bindings\colorpicker.js" />
+        <Compile Include="src\js\bindings\csstext.js" />
+        <Compile Include="src\js\bindings\droppable.js" />
+        <Compile Include="src\js\bindings\eventable.js" />
+        <Compile Include="src\js\bindings\extender.pagination.js" />
+        <Compile Include="src\js\bindings\extsortables.js" />
+        <Compile Include="src\js\bindings\fileupload.js" />
+        <Compile Include="src\js\bindings\if.subs.js" />
+        <Compile Include="src\js\bindings\jqueryui.spinner.js" />
+        <Compile Include="src\js\bindings\jqueryui.tabs.js" />
+        <Compile Include="src\js\bindings\script.template.js" />
+        <Compile Include="src\js\bindings\scrollfix.js" />
+        <Compile Include="src\js\bindings\scrollintoview.js" />
+        <Compile Include="src\js\bindings\string.template.js" />
+        <Compile Include="src\js\bindings\tooltips.js" />
+        <Compile Include="src\js\bindings\validated.value.js" />
+        <Compile Include="src\js\bindings\virtuals.js" />
+        <Compile Include="src\js\bindings\wysiwygs.js" />
+        <Compile Include="src\js\converter\checkmodel.js" />
+        <Compile Include="src\js\converter\declarations.js" />
+        <Compile Include="src\js\converter\domutils.js" />
+        <Compile Include="src\js\converter\editor.js" />
+        <Compile Include="src\js\converter\main.js" />
+        <Compile Include="src\js\converter\model.js" />
+        <Compile Include="src\js\converter\parser.js" />
+        <Compile Include="src\js\converter\stylesheet.js" />
+        <Compile Include="src\js\converter\utils.js" />
+        <Compile Include="src\js\converter\wrapper.js" />
+        <Compile Include="src\js\ext\color.js" />
+        <Compile Include="src\js\ext\inliner.js" />
+        <Compile Include="src\js\ext\localstorage.js" />
+        <Compile Include="src\js\undomanager\undomain.js" />
+        <Compile Include="src\js\undomanager\undoserializer.js" />
+        <Compile Include="tasks\lib\phantom-thumbnailer-editor.js" />
+        <Content Include="templates\tedc15\template.tedc15.html" />
+        <Content Include="templates\tedc15\README.md" />
+        <Content Include="templates\tutorial\template.tutorial.html" />
+        <Content Include="templates\tutorial\screenshot_384.jpg" />
+        <Content Include="templates\tutorial\screenshot_385.jpg" />
+        <Content Include="templates\tutorial\screenshot_386.jpg" />
+        <Content Include="templates\tutorial\screenshot_387.jpg" />
+        <Content Include="templates\tutorial\screenshot_407.jpg" />
+        <Content Include="templates\tutorial\screenshot_408.jpg" />
+        <Content Include="templates\tutorial\mosaico.tutorial.md" />
+        <Content Include="templates\versafix1\template.versafix1.html" />
+        <Content Include="templates\tedc15\edres\footerBlock.png" />
+        <Content Include="templates\tedc15\edres\full.png" />
+        <Content Include="templates\tedc15\edres\headerBlock.png" />
+        <Content Include="templates\tedc15\edres\heroBlock.png" />
+        <Content Include="templates\tedc15\edres\socialBlock.png" />
+        <Content Include="templates\tedc15\edres\threetwoBlock.png" />
+        <Content Include="templates\tedc15\edres\twoColumnBlock.png" />
+        <Content Include="templates\tutorial\edres\fixedlist.png" />
+        <Content Include="templates\tutorial\edres\full.png" />
+        <Content Include="templates\tutorial\edres\HeaderAndText.png" />
+        <Content Include="templates\versafix1\edres\buttonBlock.png" />
+        <Content Include="templates\versafix1\edres\doubleArticleBlock.png" />
+        <Content Include="templates\versafix1\edres\doubleImageBlock.png" />
+        <Content Include="templates\versafix1\edres\full.png" />
+        <Content Include="templates\versafix1\edres\hrBlock.png" />
+        <Content Include="templates\versafix1\edres\imageBlock.png" />
+        <Content Include="templates\versafix1\edres\logoBlock.png" />
+        <Content Include="templates\versafix1\edres\sideArticleBlock.png" />
+        <Content Include="templates\versafix1\edres\singleArticleBlock.png" />
+        <Content Include="templates\versafix1\edres\socialBlock.png" />
+        <Content Include="templates\versafix1\edres\spacerBlock.png" />
+        <Content Include="templates\versafix1\edres\textBlock.png" />
+        <Content Include="templates\versafix1\edres\titleBlock.png" />
+        <Content Include="templates\versafix1\edres\tripleArticleBlock.png" />
+        <Content Include="templates\versafix1\edres\tripleImageBlock.png" />
+        <Content Include="templates\versafix1\img\sponsor.gif" />
+        <Content Include="templates\versafix1\img\social_def\facebook_bw_ok.png" />
+        <Content Include="templates\versafix1\img\social_def\facebook_ok.png" />
+        <Content Include="templates\versafix1\img\social_def\flickr_bw_ok.png" />
+        <Content Include="templates\versafix1\img\social_def\flickr_ok.png" />
+        <Content Include="templates\versafix1\img\social_def\googleplus_bw_ok.png" />
+        <Content Include="templates\versafix1\img\social_def\googleplus_ok.png" />
+        <Content Include="templates\versafix1\img\social_def\instagram_bw_ok.png" />
+        <Content Include="templates\versafix1\img\social_def\instagram_ok.png" />
+        <Content Include="templates\versafix1\img\social_def\linkedin_bw_ok.png" />
+        <Content Include="templates\versafix1\img\social_def\linkedin_ok.png" />
+        <Content Include="templates\versafix1\img\social_def\twitter_bw_ok.png" />
+        <Content Include="templates\versafix1\img\social_def\twitter_ok.png" />
+        <Content Include="templates\versafix1\img\social_def\vimeo_bw_ok.png" />
+        <Content Include="templates\versafix1\img\social_def\vimeo_ok.png" />
+        <Content Include="templates\versafix1\img\social_def\web_bw_ok.png" />
+        <Content Include="templates\versafix1\img\social_def\web_ok.png" />
+        <Content Include="templates\versafix1\img\social_def\youtube_bw_ok.png" />
+        <Content Include="templates\versafix1\img\social_def\youtube_ok.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="backend" />
+        <Folder Include="build" />
+        <Folder Include="dist" />
+        <Folder Include="dist\fa" />
+        <Folder Include="dist\fa\fonts" />
+        <Folder Include="dist\img" />
+        <Folder Include="dist\lang" />
+        <Folder Include="dist\vendor" />
+        <Folder Include="dist\vendor\notoregular" />
+        <Folder Include="dist\vendor\plugins" />
+        <Folder Include="dist\vendor\plugins\advlist" />
+        <Folder Include="dist\vendor\plugins\anchor" />
+        <Folder Include="dist\vendor\plugins\autolink" />
+        <Folder Include="dist\vendor\plugins\autoresize" />
+        <Folder Include="dist\vendor\plugins\autosave" />
+        <Folder Include="dist\vendor\plugins\bbcode" />
+        <Folder Include="dist\vendor\plugins\charmap" />
+        <Folder Include="dist\vendor\plugins\code" />
+        <Folder Include="dist\vendor\plugins\codesample" />
+        <Folder Include="dist\vendor\plugins\codesample\css" />
+        <Folder Include="dist\vendor\plugins\colorpicker" />
+        <Folder Include="dist\vendor\plugins\contextmenu" />
+        <Folder Include="dist\vendor\plugins\directionality" />
+        <Folder Include="dist\vendor\plugins\emoticons" />
+        <Folder Include="dist\vendor\plugins\emoticons\img" />
+        <Folder Include="dist\vendor\plugins\fullpage" />
+        <Folder Include="dist\vendor\plugins\fullscreen" />
+        <Folder Include="dist\vendor\plugins\hr" />
+        <Folder Include="dist\vendor\plugins\image" />
+        <Folder Include="dist\vendor\plugins\imagetools" />
+        <Folder Include="dist\vendor\plugins\importcss" />
+        <Folder Include="dist\vendor\plugins\insertdatetime" />
+        <Folder Include="dist\vendor\plugins\layer" />
+        <Folder Include="dist\vendor\plugins\legacyoutput" />
+        <Folder Include="dist\vendor\plugins\link" />
+        <Folder Include="dist\vendor\plugins\lists" />
+        <Folder Include="dist\vendor\plugins\media" />
+        <Folder Include="dist\vendor\plugins\nonbreaking" />
+        <Folder Include="dist\vendor\plugins\noneditable" />
+        <Folder Include="dist\vendor\plugins\pagebreak" />
+        <Folder Include="dist\vendor\plugins\paste" />
+        <Folder Include="dist\vendor\plugins\preview" />
+        <Folder Include="dist\vendor\plugins\print" />
+        <Folder Include="dist\vendor\plugins\save" />
+        <Folder Include="dist\vendor\plugins\searchreplace" />
+        <Folder Include="dist\vendor\plugins\spellchecker" />
+        <Folder Include="dist\vendor\plugins\tabfocus" />
+        <Folder Include="dist\vendor\plugins\table" />
+        <Folder Include="dist\vendor\plugins\template" />
+        <Folder Include="dist\vendor\plugins\textcolor" />
+        <Folder Include="dist\vendor\plugins\textpattern" />
+        <Folder Include="dist\vendor\plugins\visualblocks" />
+        <Folder Include="dist\vendor\plugins\visualblocks\css" />
+        <Folder Include="dist\vendor\plugins\visualchars" />
+        <Folder Include="dist\vendor\plugins\wordcount" />
+        <Folder Include="dist\vendor\skins" />
+        <Folder Include="dist\vendor\skins\grayflat" />
+        <Folder Include="dist\vendor\skins\grayflat\fonts" />
+        <Folder Include="dist\vendor\skins\grayflat\img" />
+        <Folder Include="dist\vendor\skins\lightgray" />
+        <Folder Include="dist\vendor\skins\lightgray\fonts" />
+        <Folder Include="dist\vendor\skins\lightgray\img" />
+        <Folder Include="dist\vendor\themes" />
+        <Folder Include="dist\vendor\themes\inlite" />
+        <Folder Include="dist\vendor\themes\modern" />
+        <Folder Include="res" />
+        <Folder Include="res\img" />
+        <Folder Include="res\lang" />
+        <Folder Include="res\vendor" />
+        <Folder Include="res\vendor\skins" />
+        <Folder Include="res\vendor\skins\gray-flat" />
+        <Folder Include="res\vendor\skins\gray-flat\fonts" />
+        <Folder Include="res\vendor\skins\gray-flat\img" />
+        <Folder Include="spec" />
+        <Folder Include="spec\data" />
+        <Folder Include="src" />
+        <Folder Include="src\css" />
+        <Folder Include="src\js" />
+        <Folder Include="src\js\bindings" />
+        <Folder Include="src\js\converter" />
+        <Folder Include="src\js\ext" />
+        <Folder Include="src\js\undomanager" />
+        <Folder Include="src\tmpl" />
+        <Folder Include="tasks" />
+        <Folder Include="tasks\lib" />
+        <Folder Include="templates" />
+        <Folder Include="templates\tedc15" />
+        <Folder Include="templates\tedc15\edres" />
+        <Folder Include="templates\tutorial" />
+        <Folder Include="templates\tutorial\edres" />
+        <Folder Include="templates\versafix1" />
+        <Folder Include="templates\versafix1\edres" />
+        <Folder Include="templates\versafix1\img" />
+        <Folder Include="templates\versafix1\img\social_def" />
+        <Folder Include="uploads" />
+        <Folder Include="uploads\thumbnail" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+    <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>
